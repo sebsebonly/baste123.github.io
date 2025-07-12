@@ -1,0 +1,143 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You Baby 💌</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffe4ec, #ffc1cc);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+    }
+    .envelope {
+      font-size: 70px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .envelope:hover {
+      transform: scale(1.1);
+    }
+    .letter {
+      max-width: 600px;
+      max-height: 400px;
+      overflow-y: auto;
+      background: white;
+      padding: 20px;
+      margin: 0 auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      font-size: 16px;
+      color: #444;
+      text-align: left;
+      display: none;
+      animation: fadeIn 1s forwards;
+    }
+    .fadeIn {
+      display: block;
+      animation: fadeIn 1s forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .next-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff80ab;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="envelope" onclick="openLetter()">✉️</div>  <div class="letter" id="letter1">
+    <h2>To My Baby, My Forever 💖</h2>
+    <p>Baby... habang sinusulat ko 'to, nanginginig pa rin puso ko. Hindi ko alam kung paano ko ilalabas lahat ng gusto kong sabihin kasi sobra sobra talaga pagmamahal ko sayo. Hindi ko kayang mawala ka. Hindi ko kayang mawala yung taong nagbibigay ng kulay sa mundo ko.</p>
+    <p>Alam kong may mga mali akong nagawa. Kanina lang, nagselos ako. Nagdamdam ako. Pero hindi dahil gusto kong saktan ka, kundi dahil takot akong mawalan ng halaga sayo. Minsan, hindi ko alam kung paano ba dapat, pero ang totoo lang — gusto lang kitang mahalin at alagaan.</p>
+    <p>Nakita ko yung post mo tungkol sa asthma mo. Baby please... sana okay ka. Sana mas gumaan pakiramdam mo. Sobra akong nag-aalala. Kung puwede lang, ako nalang ang huminga ng mahirap, ako nalang ang magkasakit. Wag lang ikaw. Kasi mahal na mahal kita. Ikaw ang tahanan ko. Ikaw ang future ko.</p>
+    <p>Mahal kita. Higit pa sa salitang kaya kong sabihin. At kahit ilang ulit mo pa kong saktan, pasensyahan mo na — pero pipiliin pa rin kita. Hanggang dulo, baby. Pangako.</p>
+    <button class="next-button" onclick="nextLetter(1)">Next ➤</button>
+  </div>  <div class="letter" id="letter2">
+    <h2>Part 2 — Ikaw ang Gising Ko Araw-Araw 🌅</h2>
+    <p>Alam mo ba, baby, ikaw agad ang iniisip ko pagkagising ko. Hindi ako makakain, makagalaw ng maayos hangga’t hindi kita nakakausap. Kahit simpleng 'Good morning, lab²' lang, buo na araw ko.</p>
+    <p>Tuwing gabi, bago matulog, dasal ko ikaw agad. Dasal ko na sana okay ka, na sana di ka pinapabayaan ng katawan mo, na sana mas gumaan araw mo. Kasi kahit magkalayo tayo, gusto kong maramdaman mo na kahit papano, may isang taong sobrang nagmamahal sayo — ako 'yon. Si Baste mo.</p>
+    <p>Baby, you are the reason I try to be better every single day. Hindi ako perpekto. Pero dahil sayo, sinusubukan kong maging tao na deserve ka. Mahal na mahal kita. At kahit simpleng reply mo lang, sobrang bigat na halaga niyan para sa akin.</p>
+    <button class="next-button" onclick="nextLetter(2)">Next ➤</button>
+  </div>  <div class="letter" id="letter3">
+    <h2>Part 3 — Luha Mo, Akin Na Lang 😭</h2>
+    <p>Baby, ilang beses na ba kitang nasaktan? Ilang beses mo na ba akong pinatawad kahit ako yung mali? Hindi ko na mabilang. Pero bawat beses na nakikita kitang umiiyak o nasasaktan — mas nasasaktan ako.</p>
+    <p>Ayokong umiyak ka. Ayokong maramdaman mong mag-isa ka. Gusto ko ako yung kakampi mo, hindi yung dahilan ng luha mo. Gusto ko ako yung yayakap sayo kapag pagod ka, kapag may sakit ka, kapag down ka — hindi ako yung bibitaw. Hindi ako yung lalayo.</p>
+    <p>Pangako ko sa'yo, baby: mula ngayon, mas iingatan kita. Mas pakikinggan kita. Mas uunawain kita. Kasi ikaw yung taong hindi ko kayang mawala. Hindi lang kita girlfriend — ikaw yung future wife ko. Ikaw yung pangarap kong makasama habambuhay.</p>
+    <button class="next-button" onclick="nextLetter(3)">Next ➤</button>
+  </div>  <div class="letter" id="letter4">
+    <h2>Part 4 — Patawad, Baby 😔</h2>
+    <p>Sorry, baby. Sa lahat ng bagay na hindi ko naisip. Sa lahat ng sandaling ikaw pala’y nasasaktan na, pero ako, hindi ko pa rin na-realize. Minsan kasi, nadadala ako ng emotions ko — ng selos, ng takot, ng insecurities.</p>
+    <p>Pero kahit ganon, hindi ko gusto na ikaw ang sumalo ng bigat ko. Dapat ako ang sumasalo ng bigat mo. Kasi ikaw yung babae na pinapangarap ko. Ikaw yung tanging babae na minahal ako ng buo, kahit hindi ako perfect. Kaya ngayon, baby, sorry. At pangako — hindi na kita sasaktan ulit.</p>
+    <p>Lalaban ako para sa atin. Magbabago ako. Araw-araw, magsusumikap ako na patunayan na worth it yung tiwala at pagmamahal mo sa akin.</p>
+    <button class="next-button" onclick="nextLetter(4)">Next ➤</button>
+  </div>  <div class="letter" id="letter5">
+    <h2>Part 5 — Ikaw Ang Bukas Ko 🌈</h2>
+    <p>Pinapangarap kong isang araw, paggising ko, ikaw na agad ang katabi ko. Na hindi na tayo sa call lang naguusap. Na hindi na kita huhulaan kung galit ka ba or okay ka lang — kasi makikita ko na agad sa mga mata mo. Gusto ko na ikaw yung una kong makita sa umaga, at huli kong makasama bago matulog.</p>
+    <p>Gusto ko ikaw ang kasama ko sa lahat ng success ko. Sa hirap, sa ginhawa, sa luha, sa saya. Lahat ng milestone sa buhay ko, gusto kong nandun ka. Kasi hindi buo ang mundo ko kung wala ka.</p>
+    <p>Baby, sa lahat ng pangarap ko — ikaw yung laging kasama. Ikaw yung lagi kong sinasama sa plano. Kasi ikaw ang buhay ko. Ikaw ang forever ko.</p>
+    <button class="next-button" onclick="nextLetter(5)">Next ➤</button>
+  </div>  <div class="letter" id="letter6">
+      <h2>Part 6 — Video Call Muna, Pero Balang Araw, Yakap Na 💻🤍</h2>
+      <p>Ang hirap no? Na kahit sobrang miss na miss na kita, kailangan ko munang tiisin ang screen. Ang video call. Ang mga emoji at stickers — kasi wala pa tayo sa point na pwede na kitang yakapin araw-araw.</p>
+      <p>Pero baby, please. Magtiis lang tayo. Sandali lang ‘to. Hindi habang buhay. Dadating din yung time na hindi na natin kailangan maghintay. Yung time na makakasama na kita araw-araw. Yung time na uuwi na ako sa’yo, at hindi sa cellphone mo.</p>
+      <p>Maybe sa graduation mo... pupunta ako. Kasama ko si papa, si mama. Kasi gusto rin nilang makilala ang babaeng nagmamahal sa akin ng ganito katindi. At ako rin... gusto kong makita si daddy mo. Kasi gusto ko rin malaman saan galing ang isang katulad mong sobrang bait at sobrang ganda. 😚</p>
+      <button class="next-button" onclick="nextLetter(6)">Next ➤</button>
+  </div>  <div class="letter" id="letter7">
+    <h2>Part 7 — Laban Lang, Kahit Mahirap 💪</h2>
+    <p>Hindi madali ang relasyon natin. Madami tayong pinagdadaanan. Minsan nakakapagod. Minsan nakakaiyak. Pero baby, lahat yun, worth it. Kasi sa dulo ng pagod at luha, nandun ka. Nandun pa rin tayo.</p>
+    <p>Kaya kahit ilang beses pa tayong mag-away, kahit ilang ulit pa akong humingi ng tawad — hindi ako susuko. Hindi ako lalayo. Ikaw ang laban ko. Ikaw ang dahilan kung bakit ako hindi sumusuko sa buhay.</p>
+    <p>Promise ko, hindi ka mag-iisa. Kahit sa pinakamadilim mong araw, ako ang ilaw mo. Kahit sa pinakatahimik mong gabi, ako ang yakap mo. Kahit sa panahong ayaw mo na — ako pa rin ang pipiliin mo. Kasi hindi kita bibitawan.</p>
+    <button class="next-button" onclick="nextLetter(7)">Next ➤</button>
+  </div>  <div class="letter" id="letter8">
+    <h2>Part 8 — Forever Means You ♾️</h2>
+    <p>Bawat plano ko, may ikaw. Bawat pangarap ko, may ikaw. Bawat dasal ko, ikaw ang laman. Baby, ikaw ang forever ko. Hindi ako maghahanap pa ng iba. Wala nang mas hihigit pa sayo.</p>
+    <p>Yung simpleng ngiti mo, yun yung nagpapagaan ng loob ko. Yung boses mo, yun yung pinakamasarap pakinggan. Yung presence mo, kahit virtual lang — yun na yung comfort ko.</p>
+    <p>Ikaw na. Ikaw na talaga. Wala nang iba pa.</p>
+    <button class="next-button" onclick="nextLetter(8)">Next ➤</button>
+  </div>  <div class="letter" id="letter9">
+    <h2>Part 9 — Minahal Mo 'Ko ng Buo 💓</h2>
+    <p>Ikaw lang yung taong nakita ko na kayang magmahal kahit wasak na ako. Ikaw lang yung hindi bumitaw kahit mahirap na ako mahalin. Ikaw lang yung nagpatawad ng paulit-ulit, at piniling magmahal pa rin.</p>
+    <p>Baby, sobrang suwerte ko sayo. At sana, maramdaman mo rin na ikaw ang pinakaminamahal ko sa buong mundo. Wala nang hihigit pa sa pagmamahal ko sayo. Kahit ilang beses mo akong itulak — babalik at babalik ako sayo.</p>
+    <button class="next-button" onclick="nextLetter(9)">Next ➤</button>
+  </div>  <div class="letter" id="letter10">
+    <h2>Part 10 — Thank You Baby, I Love You Forever 💌</h2>
+    <p>Baby, thank you. Thank you for loving me. Thank you for accepting me. Thank you for understanding me when no one else could. Thank you for believing in me kahit ako mismo, hindi ko na alam paano mahalin sarili ko.</p>
+    <p>Ikaw ang dahilan bakit naniniwala pa rin akong may forever. Ikaw yung sagot sa lahat ng dasal ko. Ikaw yung taong pinapangarap kong makasama hanggang sa huli.</p>
+    <p>Hindi ko alam paano ko pasasalamatan si God — kasi sobra sobra na yung binigay Niya. Kasi ikaw yun. Ikaw na ikaw, baby. Tanging ikaw. 💖</p>
+    <p>Hintayin mo lang ako ha? Hintayin mo yung araw na di na natin kailangang magchat. Hintayin mo yung araw na makikita na kita, mayakap na kita. Hintayin mo ako, kasi ako... ikaw lang ang hinihintay ko.</p>
+    <p><strong>I love you forever. I love you always. I love you unconditionally.</strong><br>— Your Baste 🥺💍</p>
+  </div>
+</div><script>
+function openLetter() {
+  document.querySelector('.envelope').style.display = 'none';
+  document.getElementById('letter1').classList.add('fadeIn');
+}
+
+function nextLetter(current) {
+  const currentLetter = document.getElementById(`letter${current}`);
+  const next = current + 1;
+  const nextLetter = document.getElementById(`letter${next}`);
+
+  if (currentLetter) currentLetter.style.display = 'none';
+  if (nextLetter) nextLetter.style.display = 'block';
+}
+</script></body>
+</html>
